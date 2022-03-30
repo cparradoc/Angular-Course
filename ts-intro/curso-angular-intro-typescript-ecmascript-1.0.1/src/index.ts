@@ -34,3 +34,12 @@ console.log('El segundo actual de: ' + segundo);
 console.log('La canción actual es: ' + cancion);
 console.log('El autor es: ' + autorDetalle);
 console.log('La canción es del año : ' + anio);
+
+
+const dbz: string[] = ['Goku', 'Vegeta', 'Trunks'];
+const [p1, , p3] = dbz;
+
+console.log('Personaje 1: ', p1);
+console.log('Personaje 2: ', dbz[2]);
+console.log('Personaje 3: ', p3);
+
