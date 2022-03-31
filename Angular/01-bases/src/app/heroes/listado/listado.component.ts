@@ -10,9 +10,7 @@ export class ListadoComponent {
   eliminado: string= '';
 
   borrarHeroe(){
-    if(this.heroes.length > 0){
       this.eliminado = this.heroes.pop() || '';
-    }
   }
 
 }
