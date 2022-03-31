@@ -7,7 +7,11 @@ import { Personaje } from '../interfaces/dbz.interface';
 })
 export class AgregarComponent {
 
-  @Input() nuevo: Personaje = {nombre: '', poder: 0};
+  nuevo: Personaje= {
+    nombre: '',
+    poder: 0
+  }
+  
   @Input() personajes: Personaje[] = [];
 
   agregar() {
