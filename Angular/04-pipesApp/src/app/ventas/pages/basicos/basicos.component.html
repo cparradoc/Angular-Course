@@ -10,10 +10,21 @@
 <div class="p-grid">
 
     <div class="p-col-4">
-        <p-card ehader="uppercase">
-            1
+        <p-card ehader="uppercase" [subheader]="nombreLower | uppercase">
+            {{nombreLower | uppercase}}
         </p-card>
     </div>
+    <div class="p-col-4">
+        <p-card ehader="lowercase" [subheader]="nombreUpper | lowercase">
+            {{nombreUpper | lowercase}}
+        </p-card>
+    </div>
+    <div class="p-col-4">
+        <p-card ehader="titlecase" [subheader]="nombreCompleto | titlecase">
+            {{nombreCompleto | titlecase}}
+        </p-card>
+    </div>
+
     <div class="p-col-4">
         2
     </div>
