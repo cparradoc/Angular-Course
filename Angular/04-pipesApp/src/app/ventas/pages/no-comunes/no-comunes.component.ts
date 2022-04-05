@@ -49,4 +49,20 @@ export class NoComunesComponent {
     direccion: 'Ottawa, Canada'
   }
 
+  //JsonPipe
+  heroes = [
+    {
+      nombre: 'Superman',
+      vuela: true
+    },
+    {
+      nombre: 'Robin',
+      vuela: false
+    },
+    {
+      nombre: 'Aquaman',
+      vuela: false
+    }
+  ]
+
 }
