@@ -10,17 +10,17 @@
 <div class="p-grid">
 
     <div class="p-col-4">
-        <p-card ehader="uppercase" [subheader]="nombreLower | uppercase">
+        <p-card header="uppercase" [subheader]="nombreLower | uppercase">
             {{nombreLower | uppercase}}
         </p-card>
     </div>
     <div class="p-col-4">
-        <p-card ehader="lowercase" [subheader]="nombreUpper | lowercase">
+        <p-card header="lowercase" [subheader]="nombreUpper | lowercase">
             {{nombreUpper | lowercase}}
         </p-card>
     </div>
     <div class="p-col-4">
-        <p-card ehader="titlecase" [subheader]="nombreCompleto | titlecase">
+        <p-card header="titlecase" [subheader]="nombreCompleto | titlecase">
             {{nombreCompleto | titlecase}}
         </p-card>
     </div>
@@ -30,5 +30,41 @@
     </div>
     <div class="p-col-4">
         3
+    </div>
+</div>
+
+<div class="text-layout">
+    <h1>Date | Fecha | Pipe</h1>
+    <p>
+        Pipe para mostrar las fechas.
+    </p>
+</div>
+
+<div class="p-grid">
+
+    <div class="p-col-6">
+        <p-card>
+            <ul>
+                <li> fecha </li>
+                <li> fecha | date</li>
+                <li> fecha | date:'short'</li>
+                <li> fecha | date:'long'</li>
+                <li> fecha | date:'MM, dd, yyyy'</li>
+                <li> fecha | date:'M, d, y'</li>
+            </ul>
+        </p-card>
+    </div>
+
+    <div class="p-col-6">
+        <p-card>
+            <ul>
+                <li> {{fecha}} </li>
+                <li> {{fecha | date}} </li>
+                <li> {{fecha | date:'short'}} </li>
+                <li> {{fecha | date:'long'}} </li>
+                <li> {{fecha | date:'MM, dd, yyyy'}} </li>
+                <li> {{fecha | date:'M, d, y'}} </li>
+            </ul>
+        </p-card>
     </div>
 </div>
