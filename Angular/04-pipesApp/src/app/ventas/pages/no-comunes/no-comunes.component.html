@@ -53,7 +53,7 @@
         </p-fieldset>
     </div>
 
-    
+
     <div class="p-col p-md-6">
         <p-fieldset legend="KeyValue Pipe" [toggleable]="true">
             <ul>
@@ -61,6 +61,15 @@
                     <b>{{item.key}}</b>: {{item.value}}
                 </li>
             </ul>
+        </p-fieldset>
+    </div>
+
+    <div class="p-col p-md-6">
+        <p-fieldset legend="Async Pipe" [toggleable]="true">
+            <pre *ngIf="!(miObservable | async)"> Resolviendo Observable</pre>
+            <pre>{{miObservable | async}}</pre>
+            <pre *ngIf="!(valorPromesa | async)">Resolviendo Promesa</pre>
+            <pre>{{valorPromesa | async}}</pre>
         </p-fieldset>
     </div>
 
