@@ -3,6 +3,10 @@ import { RouterModule, Routes } from '@angular/router';
 import { ErrorPageComponent } from './shared/error-page/error-page.component';
 
 const routes: Routes = [
+  { //cuando alguien entre en el path auth, carga sus hijos, que viene de auth.module, cuando se cargue en memoria trae el modulo AuthModule
+    path: 'auth',
+    loadChildren: () => import('./auth/auth.module').then(m => m.AuthModule)
+  },
   {
     path: '404',
     component: ErrorPageComponent
